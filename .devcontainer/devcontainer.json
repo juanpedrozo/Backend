@@ -1,0 +1,42 @@
+{
+  // Nome do container
+  "name": "E-Commerce Backend",
+
+ // Método de criação da imagem
+  "build": {
+    // Nome do arquivo  que a configuração de criação da imagem
+    "dockerfile": "Dockerfile"
+  },
+
+   // Libera as portas do container
+   // 8080 - Spring
+   // 3306 - MySQL
+  "forwardPorts": [8080, 3306],
+
+  // Define as customizações
+  "customizations": {
+    // customizações referentes ao Visual Studio Code
+    "vscode": {
+      // Especifica as extenções que são instalados
+      "extensions": [
+        "ms-azuretools.vscode-docker",  // Docker      
+        "vscjava.vscode-java-pack",     // Java      
+        "vmware.vscode-spring-boot",    // Spring Boot       
+        "vscjava.vscode-spring-boot-dashboard", // Dashboard de apps
+        "cweijan.vscode-mysql-client2"   // MySQL    
+      ],
+      // Define configuração visuais e de ambiente do Visual Studio 
+      "settings": {
+        "workbench.colorTheme": "Dark Modern", // tema
+        "editor.fontSize": 14, // Fonte do editor 
+        "terminal.integrated.fontSize": 14,
+        "java.server.launchMode": "Standard" // executa o Java em modo "normal"
+      }
+    }
+  },
+// executa o comando definido na criação do container
+  "postCreateCommand": "/bin/bash .devcontainer/init-mysql.sh",
+  
+// Executa o comando especificando na inicialização do container
+  "postStartCommand": "service mysql start"
+}
