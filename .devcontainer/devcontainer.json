@@ -23,7 +23,8 @@
         "vscjava.vscode-java-pack",     // Java      
         "vmware.vscode-spring-boot",    // Spring Boot       
         "vscjava.vscode-spring-boot-dashboard", // Dashboard de apps
-        "cweijan.vscode-mysql-client2"   // MySQL    
+        "cweijan.vscode-mysql-client2",   // MySQL    
+        "vscjava.vscode-spring-initializr"
       ],
       // Define configuração visuais e de ambiente do Visual Studio 
       "settings": {

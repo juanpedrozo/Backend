@@ -39,7 +39,7 @@ COLLATE utf8mb4_unicode_ci;
 
 CREATE USER IF NOT EXISTS 'juan'@'%' IDENTIFIED BY '123@Mudar';
 
-GRANT ALL PRIVILEGES ON ecommerce.* TO 'sergio'@'%';
+GRANT ALL PRIVILEGES ON ecommerce.* TO 'juan'@'%';
 
 FLUSH PRIVILEGES;
 EOF
