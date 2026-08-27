@@ -2,7 +2,6 @@ package br.edu.unifio.ecommerce.entidades;
 
 import java.math.BigDecimal;
 
-import org.hibernate.annotations.ManyToAny;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
