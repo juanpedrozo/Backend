@@ -1,13 +1,13 @@
-package br.edu.unifio.ecormmece;
+package br.edu.unifio.ecommerce;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EcormmeceApplication {
+public class EcommerceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EcormmeceApplication.class, args);
+		SpringApplication.run(EcommerceApplication.class, args);
 	}
 
 }

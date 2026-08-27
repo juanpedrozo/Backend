@@ -1,10 +1,10 @@
-package br.edu.unifio.ecormmece;
+package br.edu.unifio.ecommerce;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EcormmeceApplicationTests {
+class EcommerceApplicationTests {
 
 	@Test
 	void contextLoads() {

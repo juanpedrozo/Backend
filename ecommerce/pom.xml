@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.edu.unifio</groupId>
-	<artifactId>ecormmece</artifactId>
+	<artifactId>ecommerce</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ecormmece</name>
+	<name>ecommerce</name>
 	<description/>
 	<url/>
 	<licenses>
