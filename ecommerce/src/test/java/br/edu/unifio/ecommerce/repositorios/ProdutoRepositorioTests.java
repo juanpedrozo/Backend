@@ -104,4 +104,36 @@ public class ProdutoRepositorioTests {
                         .getNome()
         );
     }
+
+    @Test
+    @Order(5)
+    public void deveAlterarUmProduto() {
+
+        Produto produto = new Produto();
+
+        produto.setNome("Produto Original");
+        produto.setDescricao("Descrição Original");
+        produto.setEstoque(Short.parseShort("5"));
+        produto.setPreco(new BigDecimal("100.00"));
+
+        produto.setCategoria(
+                categoriaRepositorio
+                        .findById(Short.parseShort("1"))
+                        .orElseThrow()
+        );
+
+        produtoRepositorio.save(produto);
+
+        produto.setNome("Produto Alterado");
+        produto.setPreco(new BigDecimal("150.00"));
+
+        produtoRepositorio.save(produto);
+
+        Produto produtoAlterado = produtoRepositorio
+                .findById(produto.getId())
+                .orElseThrow();
+
+        assertEquals("Produto Alterado", produtoAlterado.getNome());
+        assertEquals(new BigDecimal("150.00"), produtoAlterado.getPreco());
+    }
 }
